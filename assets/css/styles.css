@@ -190,11 +190,23 @@ button:focus,
 
     .grid_item {
         display: inline-block;
-        background-color: lightgray;
+        background-color: var(--primary-color);
+        color: white; 
         min-height: auto;
         width: auto;
         padding: 5px;
+        border-radius: 10px; 
+        transition: 0.4s; 
+
     }
+
+.grid_item:hover,
+.grid_item:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
 
     .grid__item:last-child {
         grid-column: 3 / 3;

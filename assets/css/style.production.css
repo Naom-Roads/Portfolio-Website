@@ -90,12 +90,14 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
+   /* lets the mouse appear as a hand when hovering over the button */
    cursor: pointer;
+   /* reduces the opacity of the button to 80% */
    opacity: 0.8;
 }
 
 
-.button__secondary {
+.button_secondary {
    background-color: #e0b354;
    color: #2b2b2b;
    border-bottom: 2px solid rgba(192, 155, 35, 0.801);
@@ -221,11 +223,25 @@ button:focus,
 
    .grid_item {
        display: inline-block;
-       background-color: lightgray;
+       background-color: #223d50;
+       color: white; 
        min-height: auto;
        width: auto;
        padding: 5px;
+       border-radius: 10px; 
+       -webkit-transition: 0.4s; 
+       -o-transition: 0.4s; 
+       transition: 0.4s; 
+
    }
+
+.grid_item:hover,
+.grid_item:focus {
+   /* lets the mouse appear as a hand when hovering over the button */
+   cursor: pointer;
+   /* reduces the opacity of the button to 80% */
+   opacity: 0.8;
+}
 
    .grid__item:last-child {
        -ms-grid-column: 3;
