@@ -208,6 +208,18 @@ button:focus,
     opacity: 0.8;
 }
 
+.grid_item a {
+ color: white; 
+ justify-content: baseline;
+ transition: 0.4s; 
+
+}
+
+a:hover a:focus {
+    text-decoration: none; 
+    color: var(--secondary-color);
+    opacity: 0.8;
+ }
     .grid__item:last-child {
         grid-column: 3 / 3;
         grid-row: 1 / 3;
