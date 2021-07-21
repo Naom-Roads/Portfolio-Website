@@ -102,6 +102,10 @@ button:focus,
    
 }
 
+.page-header_logo {
+    width: 50%; 
+  }
+  
 
 .page-header_item {
     flex: 0 1 200px;

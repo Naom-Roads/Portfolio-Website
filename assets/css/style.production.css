@@ -112,13 +112,17 @@ button:focus,
 .page-header {
    display: -webkit-box;
    display: -ms-flexbox;
-   display: flex;
    width: 100%;
    padding: 10px;
+   margin-bottom: 60px; 
    /* background-color: #223d50; */
   
 }
 
+.page-header_logo {
+   width: 50%; 
+ }
+ 
 
 .page-header_item {
    -webkit-box-flex: 0;
@@ -222,14 +226,12 @@ button:focus,
    }
 
    .grid_item {
-       display: flex;
-       flex-direction: column; 
-       justify-content: space-between;
-       background-color: rgba(34, 61, 80, 1);
+       display: inline-block;
+       background-color: #223d50;
        color: white; 
        min-height: auto;
        width: auto;
-       padding: 0 10px 15px;
+       padding: 5px;
        border-radius: 10px; 
        -webkit-transition: 0.4s; 
        -o-transition: 0.4s; 
@@ -242,7 +244,7 @@ button:focus,
    /* lets the mouse appear as a hand when hovering over the button */
    cursor: pointer;
    /* reduces the opacity of the button to 80% */
-   background-color: rgba(34, 61, 80, 0.9);
+   opacity: 0.8;
 }
 
 .grid_item a {
@@ -256,11 +258,10 @@ transition: 0.4s;
 
 }
 
-.grid_item a:hover, .grid_item a:focus {
-   text-decoration: underline; 
+a:hover a:focus {
+   text-decoration: none; 
    color: #e0b354;
-   
-   
+   opacity: 0.8;
 }
    .grid__item:last-child {
        -ms-grid-column: 3;
