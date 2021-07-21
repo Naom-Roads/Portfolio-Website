@@ -112,9 +112,9 @@ button:focus,
 .page-header {
    display: -webkit-box;
    display: -ms-flexbox;
+   display: flex;
    width: 100%;
    padding: 10px;
-   margin-bottom: 60px; 
    /* background-color: #223d50; */
   
 }
@@ -210,6 +210,27 @@ button:focus,
            justify-content: center;
    text-align: center;
 }
+
+
+/* Contact Form */ 
+
+
+
+.contact-form {
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex; 
+   -webkit-box-orient: vertical; 
+   -webkit-box-direction: normal; 
+       -ms-flex-direction: column; 
+           flex-direction: column;
+   margin:  0 auto;
+   max-width: 500px;
+   padding: 10px 15px; 
+
+}
+
+
 
 
 

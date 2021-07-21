@@ -181,6 +181,22 @@ button:focus,
 }
 
 
+/* Contact Form */ 
+
+
+
+.contact-form {
+    display:flex; 
+    flex-direction: column;
+    margin:  0 auto;
+    max-width: 500px;
+    padding: 10px 15px; 
+ 
+ }
+ 
+ 
+
+
 
 /* ------ Portfolio ----- */
 

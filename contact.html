@@ -40,11 +40,11 @@
 
     </header>
 
-    <section>
+    <section >
 
         <h3>Send me a Message</h3>
-
-        <form action="none" method="post" id="contact-form">
+         
+        <form action="none" method="post" id="contact-form" class="contact-form">
             <label for="email" class="standard-label">*E-mail: </label>
             <input id="email" type="email" required>
 
@@ -53,7 +53,7 @@
             <!-- Only use if you need to restrict to US numbers <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> -->
 
             <label for="message" class="standard-label">*Message:</label>
-            <textarea id="message" maxlength="240" required></textarea>
+            <textarea id="message" maxlength="240" rows="6" required></textarea>
             <button class="button" type="button" value="Send Message">Send Message</button>
         </form>
 
