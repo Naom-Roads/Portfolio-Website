@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-   font-size: 24px;
+   font-size: 24px; 
    font-weight: 700;
 }
 
@@ -193,13 +193,11 @@ button:focus,
 }
 
 .skills_table tr {
-   display: -ms-grid;
    display: grid;
    padding: 5px;
    -webkit-box-pack: space-evenly;
        -ms-flex-pack: space-evenly;
            justify-content: space-evenly;
-   -ms-grid-columns: (1fr)[3];
    grid-template-columns: repeat(3, 1fr);
 
 }
@@ -247,18 +245,18 @@ button:focus,
    }
 
    .grid_item {
-       display: inline-block;
-       background-color: #223d50;
-       color: white; 
-       min-height: auto;
-       width: auto;
-       padding: 5px;
-       border-radius: 10px; 
-       -webkit-transition: 0.4s; 
-       -o-transition: 0.4s; 
-       transition: 0.4s; 
+      color: white; 
+      min-height: auto;
+      width: auto;
+      padding: 0 10px 15px;
+      border-radius: 10px; 
+      transition: 0.4s; 
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between;
+      background-color: rgba(34, 61, 80, 1);
 
-   }
+  }
 
 .grid_item:hover,
 .grid_item:focus {
@@ -270,16 +268,13 @@ button:focus,
 
 .grid_item a {
 color: white; 
--webkit-box-pack: baseline; 
-    -ms-flex-pack: baseline; 
-        justify-content: baseline;
 -webkit-transition: 0.4s;
 -o-transition: 0.4s;
 transition: 0.4s; 
 
 }
 
-a:hover a:focus {
+.grid_item a:hover, .grid_item a:focus {
    text-decoration: none; 
    color: #e0b354;
    opacity: 0.8;
@@ -355,8 +350,8 @@ a:hover a:focus {
 }
 
 .cloud-front {
-   -webkit-animation: 40s cloud-move inifinite alternate linear;
-           animation: 40s cloud-move inifinite alternate linear;
+   -webkit-animation: 40s cloud-move infinite alternate linear;
+           animation: 40s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
