@@ -194,6 +194,7 @@ button:focus,
    -webkit-box-pack: center;
        -ms-flex-pack: center;
            justify-content: center;
+   
 }
 
 .skills_table tr {
@@ -232,7 +233,7 @@ button:focus,
 .about-buttons {
        display: -ms-grid;
        display: grid; 
-       grid-area: auto, span 2;
+       -ms-layout-grid-line: auto, span 2;
        margin: 10px; 
 }
 
