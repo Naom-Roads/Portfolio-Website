@@ -159,6 +159,10 @@ button:focus,
     margin-top: 25px;
 }
 
+/* About */ 
+
+
+
 .skills_table {
     display: grid;
     margin: 0 auto;
@@ -180,11 +184,6 @@ button:focus,
     text-align: center;
 }
 
-
-/* Contact Form */ 
-
-
-
 .contact-form {
     display:flex; 
     flex-direction: column;
@@ -194,6 +193,9 @@ button:focus,
  
  }
  
+ .about-buttons { 
+     margin: 10px; 
+ }
  
 
 
