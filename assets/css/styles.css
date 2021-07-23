@@ -175,6 +175,7 @@ button:focus,
     display: grid;
     padding: 5px;
     justify-content: space-evenly;
+    -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
 
 }

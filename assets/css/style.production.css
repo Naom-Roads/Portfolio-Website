@@ -203,7 +203,7 @@ button:focus,
    -webkit-box-pack: space-evenly;
        -ms-flex-pack: space-evenly;
            justify-content: space-evenly;
-   -ms-grid-columns: (1fr)[3];
+   -ms-grid-columns: repeat(3, 1fr);
    grid-template-columns: repeat(3, 1fr);
 
 }
