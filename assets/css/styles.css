@@ -82,7 +82,7 @@ button:focus,
 }
 
 
-.button_secondary {
+.button-secondary {
     background-color: var(--secondary-color);
     color: var(--dark_grey);
     border-bottom: 2px solid rgba(192, 155, 35, 0.801);
