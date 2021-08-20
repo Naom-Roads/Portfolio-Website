@@ -44,17 +44,24 @@
 
         <h3>Send me a Message</h3>
          
+        <div class="wrapper">
         <form action="none" method="post" id="contact-form" class="contact-form">
             <label for="email" class="standard-label">*E-mail: </label>
             <input id="email" type="email" required>
+        </div>
 
+        <div class="wrapper">
             <label for="phonenumber" class="standard-label">Telephone:</label>
             <input id="phonenumber" type="tel">
             <!-- Only use if you need to restrict to US numbers <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> -->
+        </div>
 
+        <div class="wrapper">
             <label for="message" class="standard-label">*Message:</label>
             <textarea id="message" maxlength="240" rows="6" required></textarea>
             <button class="button" type="button" value="Send Message">Send Message</button>
+        </div>
+
         </form>
 
     </section>
@@ -92,6 +99,7 @@
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/mainscripts.js"></script>
 </body>
 
 
