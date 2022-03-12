@@ -99,11 +99,47 @@ button:focus,
     opacity: 0.8;
 }
 
+a:visited,
+.btn:visited {
+    color: white;
+}
+
+a:active,
+.btn:active {
+    color: white;
+}
+
 
 .button-secondary {
     background-color: var(--secondary-color);
     color: var(--dark_grey);
     border-bottom: 2px solid rgba(192, 155, 35, 0.801);
+}
+
+.btn {
+    margin: 10px;
+    border: none;
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    color: white;
+    -webkit-text-decoration: var(--text-decoration);
+    text-decoration: var(--text-decoration);
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+
+}
+
+
+.btn:hover,
+.btn:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
 }
 
 .main-buttons {
