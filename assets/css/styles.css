@@ -175,6 +175,7 @@ button:focus,
     display: grid;
     padding: 5px;
     justify-content: space-evenly;
+    -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
 
 }
@@ -193,8 +194,10 @@ button:focus,
  
  }
  
- .about-buttons { 
-     margin: 10px; 
+ .about-buttons {
+        display: grid; 
+        grid-area: auto, span 2;
+        margin: 10px; 
  }
  
 

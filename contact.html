@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="favicon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -30,8 +30,7 @@
                     <a href="index.html" role="menuitem"
                         class="navigation-list__item navigation-list__item--active">Home</a>
                 </li>
-                <li role="presentation"> <a href="about.html" role="menuitem" class="navigation-list_item"
-                        target="_blank">About Me</a>
+                <li role="presentation"> <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
                 </li>
 
                 <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list_item">My Work</a>
@@ -45,17 +44,24 @@
 
         <h3>Send me a Message</h3>
          
+        <div class="wrapper">
         <form action="none" method="post" id="contact-form" class="contact-form">
             <label for="email" class="standard-label">*E-mail: </label>
             <input id="email" type="email" required>
+        </div>
 
+        <div class="wrapper">
             <label for="phonenumber" class="standard-label">Telephone:</label>
             <input id="phonenumber" type="tel">
             <!-- Only use if you need to restrict to US numbers <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> -->
+        </div>
 
+        <div class="wrapper">
             <label for="message" class="standard-label">*Message:</label>
             <textarea id="message" maxlength="240" rows="6" required></textarea>
             <button class="button" type="button" value="Send Message">Send Message</button>
+        </div>
+
         </form>
 
     </section>
@@ -93,6 +99,7 @@
         </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
+    <script src="js/mainscripts.js"></script>
 </body>
 
 
