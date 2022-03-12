@@ -1,4 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 *, *:before, *:after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -32,6 +40,8 @@
     margin-top: -30px;
     border-radius: 50%;
     background: #fff;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
     cursor: pointer;
 }
@@ -47,18 +57,30 @@
     top: 50%;
     width: 3px;
     height: 14px;
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
     transform-origin: 50% 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 .slider__control-line:nth-child(2) {
+    -webkit-transform: translateY(1px) rotate(-135deg);
+    -ms-transform: translateY(1px) rotate(-135deg);
     transform: translateY(1px) rotate(-135deg);
 }
 .slider__control--right .slider__control-line {
     left: 37px;
+    -webkit-transform-origin: 1px 0;
+    -ms-transform-origin: 1px 0;
     transform-origin: 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .slider__control--right .slider__control-line:nth-child(2) {
+    -webkit-transform: translateY(1px) rotate(135deg);
+    -ms-transform: translateY(1px) rotate(135deg);
     transform: translateY(1px) rotate(135deg);
 }
 .slider__control-line:after {
@@ -69,24 +91,42 @@
     width: 100%;
     height: 100%;
     background-color: #e2e2e2;
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 .slider__control:hover .slider__control-line:after {
     background-color: #fff;
 }
 .slider__control.a--rotation .slider__control-line:after {
+    -webkit-animation: arrowLineRotation 0.49s;
     animation: arrowLineRotation 0.49s;
 }
 .slider__control.a--rotation .slider__control-line:nth-child(1):after {
+    -webkit-animation: arrowLineRotationRev 0.49s;
     animation: arrowLineRotationRev 0.49s;
+}
+@-webkit-keyframes arrowLineRotation {
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
 @keyframes arrowLineRotation {
     to {
+        -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
+    }
+}
+@-webkit-keyframes arrowLineRotationRev {
+    to {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
     }
 }
 @keyframes arrowLineRotationRev {
     to {
+        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg);
     }
 }
@@ -97,21 +137,35 @@
     top: 50%;
     width: 150vmax;
     height: 150vmax;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
+    -webkit-transition: -webkit-clip-path 0s 0.91s;
+    transition: -webkit-clip-path 0s 0.91s;
+    -o-transition: clip-path 0s 0.91s;
     transition: clip-path 0s 0.91s;
+    transition: clip-path 0s 0.91s, -webkit-clip-path 0s 0.91s;
+    -webkit-clip-path: circle(30px at 120vw 50%);
     clip-path: circle(30px at 120vw 50%);
 }
 .slide.s--prev {
+    -webkit-clip-path: circle(30px at 30vw 50%);
     clip-path: circle(30px at 30vw 50%);
 }
 .slide.s--active {
     overflow-x: hidden;
     z-index: 1;
+    -webkit-transition: -webkit-clip-path 1.3s;
+    transition: -webkit-clip-path 1.3s;
+    -o-transition: clip-path 1.3s;
     transition: clip-path 1.3s;
+    transition: clip-path 1.3s, -webkit-clip-path 1.3s;
+    -webkit-clip-path: circle(120vmax at 120vw 50%);
     clip-path: circle(120vmax at 120vw 50%);
 }
 .slide.s--active.s--active-prev {
+    -webkit-clip-path: circle(120vmax at 30vw 50%);
     clip-path: circle(120vmax at 30vw 50%);
 }
 .slide:nth-child(1) .slide__inner {
@@ -173,12 +227,14 @@
 
 @media all and (max-width: 500px) {
     .slider {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
     .slider {
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -203,4 +259,3 @@
         font-size: 22px;
     }
 }
-
