@@ -1,6 +1,11 @@
+html {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
+
 
 :root { 
     --primary-color:  #223d50; 
@@ -12,6 +17,7 @@
 
 
 body {
+    overflow-x: hidden;
     background-color: whitesmoke;
     font-family: var(--font-family);
     font-weight: 400;
@@ -88,8 +94,32 @@ button:focus,
     border-bottom: 2px solid rgba(192, 155, 35, 0.801);
 }
 
+.main-buttons {
+    margin: 0 auto;
+}
 
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    animation-name: fadeInOut;
+    animation-delay: 250ms;
+}
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInOut;
+    animation-delay: 250ms;
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    animation-name: fadeInOut;
+    animation-delay: 250ms;
+}
 
 
 /* Header */
@@ -141,7 +171,7 @@ button:focus,
 /* ------ Main -------*/
 
 .profile {
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
@@ -159,9 +189,7 @@ button:focus,
     margin-top: 25px;
 }
 
-/* About */ 
-
-
+/* About */
 
 .skills_table {
     display: grid;
@@ -317,19 +345,16 @@ button:focus,
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 50px; 
-  
-
+    padding-top: 10px;
+    margin-bottom: 0;
 }
 
 .social-media {
-
     margin-top: 10px; 
 }
 
 
 /* ------ Responsive Classes ------- */
-
 
 @media all and (max-width: 500px) {
     .grid {
@@ -363,3 +388,4 @@ button:focus,
         font-size: 22px;
     }
 }
+

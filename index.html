@@ -7,71 +7,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="favicon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hello-animation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/js-slider.css">
+    <script src="https://kit.fontawesome.com/423adbb2a0.js" crossorigin="anonymous"></script>
+
 
     <title>Home</title>
 </head>
 
 <body>
-    <header class="page-header">
-        <!-- Add Logo Here -->
-        <a href="index.html">
-        <img src="./assets/img/naomroadslogo2.png"
-            alt="A text logo in uppercase letters Naom Roads, with a graphic depicting a sunset and road"
-            class="page-header_logo"> </a>
+<header class="page-header">
+    <nav class="main-navigation page-header_item">
+        <ul role="menubar" class="navigation-list">
+            <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+            </li>
+            <li role="presentation"><a href="about.html#myskills" role="menuitem"
+                                       class="navigation-list_item">About Me</a>
+            </li>
+            <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list_item">My Work</a>
+            </li>
+        </ul>
+    </nav>
 
-        <nav class="main-navigation page-header_item">
-            <ul role="menubar" class="navigation-list"> 
-                
+</header>
 
-                <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>
-                <li role="presentation"> <a href="about.html#myskills" role="menuitem"
-                        class="navigation-list_item">About Me</a>
-                </li>
-                <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list_item">My Work</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-
+<section>
     <div class="profile">
-        <!-- Add Portrait Image here -->
-
         <img src="assets/img/Naomsheadshotphoto1.png" class="profile_portrait animate__fadeIn"
-            alt="Portrait of Naomi Rodriguez Madiedo">
-        <h1 class="animate__fadeIn">Hello There!</h1>
+             alt="Portrait of Naomi Rodriguez Madiedo">
 
-        <div>
-            <p>My name is Naom Roads. I am a <span>web</span> developer from France. Thanks for visiting my site!</p>
-            <a href="work.html">Check out some of my code!</a>
-        </div>
-        <div>
-            <button type="button">Call Me</button>
-            <button class="button-secondary">Email Me</button>
+        <!-- This is a recreation of the SVG animation that can be found on Wokine.com -->
+
+        <div class="hello-parent">
+            <svg class="hello-word" width="365" height="365" viewBox="0 0 365 365">
+                <g id="H-letter">
+                    <line class="H-left-stroke" x1="17" y1="0" x2="17" y2="124" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="H-mid-stroke" x1="33" y1="62" x2="68" y2="62" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="H-right-stroke" x1="84" y1="0" x2="84" y2="124" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                </g>
+                <g id="E-letter">
+                    <line class="E-left-stroke" x1="138" y1="0" x2="138" y2="124" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="E-top-stroke" x1="154" y1="17" x2="201" y2="17" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="E-mid-stroke" x1="154" y1="62" x2="196" y2="62" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="E-bottom-stroke" x1="154" y1="107" x2="201" y2="107" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                </g>
+
+                <g id="L-one-letter">
+                    <line class="L-one-long-stroke" x1="17" y1="153" x2="17" y2="277" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="L-one-short-stroke" x1="33" y1="260" x2="77" y2="260" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                </g>
+
+                <g id="L-two-letter">
+                    <line class="L-two-long-stroke" x1="104" y1="153" x2="104" y2="277" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                    <line class="L-two-short-stroke" x1="120" y1="260" x2="164" y2="260" stroke="#000" fill="none"
+                          stroke-width="34"/>
+                </g>
+
+                <g id="O-letter">
+                    <circle class="O-stroke" cx="231" cy="215" r="48" stroke="#000" fill="none" stroke-width="31"/>
+                </g>
+
+                <g id="red-dot">
+                    <circle class="red-dot" cx="325" cy="260" r="20" fill="#6699FF" stroke="none"/>
+                    -->
+
+                    <line x1="325" y1="260" x2="325" y2="260" stroke="#FF5851" class="red-dot"/>
+                </g>
+            </svg>
         </div>
     </div>
-    <br>
+</section>
 
 
-    <footer class="page-footer">
-        <p> Find me on</p>
+<div class="container blurb">
+    <p>My name is Naomi Rodriguez Madiedo, I Live in Paris but, I hail from US West Coast.</p>
 
-        <div class="social-media">
-            <img src="http://via.placeholder.com/30x30" alt="fb">
-            <img src="http://via.placeholder.com/30x30" alt="twitter">
-            <img src="http://via.placeholder.com/30x30" alt="Linkedin">
+</div>
+
+<section class="main-buttons">
+    <div class="projects">
+        <i class="fa-solid fa-diagram-project fa-3x"></i>
+        <button type="button" class="btn btn-primary btn-lg" href="work.html">Projects</button>
+    </div>
+
+    <div class="about">
+        <i class="fa-solid fa-user-astronaut fa-3x"></i>
+        <button type="button" class="btn btn-secondary btn-lg" href="about.html"> About Me</button>
+    </div>
+
+
+    <div class="contact">
+        <i class="fa-solid fa-paper-plane fa-3x"></i>
+        <button type="button" class="btn btn-primary btn-lg" href="contact.html">Contact</button>
+    </div>
+
+</section>
+<section>
+
+    <div class="container slider">
+        <div class="slider">
+            <!-- slides -->
+            <div class="slider__slides">
+                <div class="slide s--active">
+                    <div class="slide__inner">
+                        <div class="slide__content">
+                            <h2 class="slide__heading">Sneak Peak of My Projects</h2>
+                            <p class="slide__text">Click for Details!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__inner">
+                        <div class="slide__content">
+                            <h2 class="slide__heading">Simple Animation</h2>
+                            <p class="slide__text">Clip-path magic!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__inner">
+                        <div class="slide__content">
+                            <h2 class="slide__heading">Sneak Peak of My Work!</h2>
+                            <p class="slide__text">It looks cool, isn't it?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide__inner">
+                        <div class="slide__content">
+                            <h2 class="slide__heading">Limited browser support</h2>
+                            <p class="slide__text">Forget about IE/Edge and FF</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide s--prev">
+                    <div class="slide__inner">
+                        <div class="slide__content">
+                            <h2 class="slide__heading">Check my other stuff!</h2>
+                            <p class="slide__text"><a href="https://codepen.io/suez/pens/public/" target="_blank">Other
+                                demos</a> and <a href="https://twitter.com/NikolayTalanov" target="_blank">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- slides end -->
+            <div class="slider__control">
+                <div class="slider__control-line"></div>
+                <div class="slider__control-line"></div>
+            </div>
+            <div class="slider__control slider__control--right m--right">
+                <div class="slider__control-line"></div>
+                <div class="slider__control-line"></div>
+            </div>
         </div>
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </div>
+
+</section>
+<br>
+
+<!--   footer  starts here -->
+
+<footer class="page-footer">
+    <p> Find me on</p>
+    <div class="social-media">
+        <img src="http://via.placeholder.com/30x30" alt="fb">
+        <img src="http://via.placeholder.com/30x30" alt="twitter">
+        <img src="http://via.placeholder.com/30x30" alt="Linkedin">
+    </div>
+</footer>
+
+
+<script src="js/tota11y.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
