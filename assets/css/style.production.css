@@ -536,7 +536,7 @@ button:focus,
     padding: 30px 10px;
 }
 
-.social-media a:active {
+.social-media a:active, .social-media a:hover, .social-media a:visited {
     color: #3a576b;
 }
 
