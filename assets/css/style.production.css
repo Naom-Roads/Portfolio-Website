@@ -536,6 +536,10 @@ button:focus,
     padding: 30px 10px;
 }
 
+.social-media a:active {
+    color: #3a576b;
+}
+
 
 /* ------ Responsive Classes ------- */
 
