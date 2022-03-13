@@ -201,8 +201,6 @@ button:focus,
 
 
 
-
-
 .projects {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -335,8 +333,9 @@ button:focus,
 
 /* ------ Portfolio ----- */
 
+
 @supports (display: grid) {
-    .grid {
+    .card-group {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
@@ -345,18 +344,14 @@ button:focus,
         margin: 0;
     }
 
-    .grid_item {
-        color: white;
+    .card {
         min-height: auto;
         width: auto;
         padding: 0 10px 15px;
-        border-radius: 10px;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
         transition: 0.4s;
         display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -364,19 +359,19 @@ button:focus,
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
-        background-color: rgba(34, 61, 80, 1);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     }
 
-    .grid_item:hover,
-    .grid_item:focus {
+    .card:hover,
+    .card:focus {
         /* lets the mouse appear as a hand when hovering over the button */
         cursor: pointer;
         /* reduces the opacity of the button to 80% */
         opacity: 0.8;
     }
 
-    .grid_item a {
+    .card a {
         color: white;
         -webkit-transition: 0.4s;
         -o-transition: 0.4s;
@@ -384,12 +379,12 @@ button:focus,
 
     }
 
-    .grid_item a:hover, .grid_item a:focus {
+    .card a:hover, .grid_item a:focus {
         text-decoration: none;
         color: var(--secondary-color);
         opacity: 0.8;
     }
-    .grid_item:last-child {
+    .card:last-child {
         -ms-grid-column: 3;
         grid-column: 3 / 3;
         -ms-grid-row: 1;
@@ -524,31 +519,31 @@ button:focus,
 /* ------ Responsive Classes ------- */
 
 @media all and (max-width: 500px) {
-    .grid {
+    .card-group {
         -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
+    .card-group {
         -ms-grid-columns: 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media all and (max-width: 750px) {
-    .grid {
+    .card-group {
         grid-gap: 10px;
     }
 }
 
 @media all and (max-width: 750px) {
-    .grid {
+    .card-group {
         grid-gap: 10px;
     }
 
-    .grid_item:last-child {
+    .card:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
     }

@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="favicon" href="./assets/img/favicon.ico">
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/hello-animation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/js-slider.css">
+    <script src="https://kit.fontawesome.com/423adbb2a0.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
 </head>
 
@@ -29,9 +33,6 @@
                 <li role="presentation">
                     <a href="index.html" role="menuitem"
                         class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation"><a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>
 
                 <li role="presentation"> <a href="about.html#myskills" role="menuitem"
                         class="navigation-list_item">About Me</a>
@@ -44,54 +45,109 @@
     <!-- Main Content -->
 
     <section>
-        <h1>Projects</h1>
 
-        <div class="grid">
-
-            <!-- Grid Items will live here  -->
-
-            <div class="grid_item">
-                <h2>Finance Tracker</h2>
-                <p>Financial Tracking App, primarily developed using Ruby on Rails. You can track stocks as well as add
-                    friends and track their stocks.</p>
-                <a href="https://github.com/Naom-Roads/finance-tracker" target="_blank" rel="noopener"> See Project on Github</a>
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="assets/img/myflixangularmd.png" alt="Image of MyFlix Site Movies List">
+                <div class="card-body">
+                    <h5 class="card-title">MyFlix Angular Client</h5>
+                    <p class="card-text">MyFlix Angular is the client side of an application that allows the user to create an account,
+                        save their favorite movies and see the information related to those movies</p>
+                    <a href="https://github.com/Naom-Roads/myFlix-angular-client" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
 
-            <div class="grid_item">
-                <h2>Message Moi</h2>
-                <p>Simple app that allows friends and family to chat over cyber space.</p>
-                <a href="https://github.com/Naom-Roads/message_moi" target="_blank" rel="noopener">See Project on Github</a>
+            <div class="card">
+                <img class="card-img-top" src="assets/img/eventaxisgraph.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Event Axis</h5>
+                    <p class="card-text">Event Axis uses google calendars API to connect users to there events on an app where they can search by city, filter by number, and view data analysis on their events</p>
+                    <a href="https://github.com/Naom-Roads/event-axis" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
 
-            <div class="grid_item">
-                <h2>Alpha Blog</h2>
-                <p>Cyber Journal where a user can write their thoughts or ideas to share with others or just for
-                    themselves. They can also follow other bloggers</p>
-                <a href="https://github.com/Naom-Roads/Alpha_blog" target="_blank" rel="noopener"> See Project on Github</a>
+            <div class="card">
+                <img class="card-img-top" src="assets/img/myFlixApidocs.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">MyFlix Api</h5>
+                    <p class="card-text">Interface that is used when making requests to and recieving responses from server-side MyFlix.</p>
+                    <a href="https://github.com/Naom-Roads/my-flix-api" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
 
-            <div class="grid_item">
-                <h2>Pokedex</h2>
-                <p> Fun little Pokedex App for getting to know the Pokeverse.</p>
-                <a href="https://naom-roads.github.io/pokedex-app/"> See Project on Github</a>
+        <div class="card">
+            <img class="card-img-top" src="assets/img/pokedex.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">PokeDex</h5>
+                <p class="card-text">Fun little Pokedex App for getting to know the Pokeverse.
+                    User can click or search for a Pokemon to get stats</p>
+                <a href="https://github.com/Naom-Roads/pokedex-app" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
+        </div>
 
-            <div class="grid_item">
-                <h2>Event Axis</h2>
-                <p>Event Axis uses google calendars API to connect users to there events on an app where they can search by city, filter by number, and view data analysis on their events</p>
-                <a href="https://naom-roads.github.io/event-axis/"> See Project on Github</a>
+        <div class="card">
+            <img class="card-img-top" src="assets/img/myflixreact.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">MyFlix Client ReactJS</h5>
+                <p class="card-text">The Web application provides users with access to the information about different movies, directors, genres using a secure interface. Users can sign up, login and save their favorite movies on a list that is unique to them. This application was built using React.</p>
+                <a href="https://github.com/Naom-Roads/client-myflix" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
+        </div>
 
-            <div class="grid_item">
-                <h2>Project 6</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iusto eum qui, cumque reprehenderit ea
-                    necessitatibus ducimus quidem ad dolorum sint est autem illum vitae deleniti perspiciatis unde
-                    delectus nisi.</p>
-                <a href="#"> See Project on Github</a>
+
+        <div class="card">
+            <img class="card-img-top" src="assets/img/alphablog.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">AlphaBlog</h5>
+                <p class="card-text">Cyber Journal where a user can write their thoughts or ideas to share with others or just for
+                    themselves. This is my first Ruby on Rails application</p>
+                <a href="https://github.com/Naom-Roads/Alpha_blog" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+
+            <div class="card">
+                <img class="card-img-top" src="assets/img/gochatsnapshot.png" alt="Image of MyFlix Site Movies List">
+                <div class="card-body">
+                    <h5 class="card-title">GoChat</h5>
+                    <p class="card-text">App that allows users to send photos and location via a customizable chat room. Users can also use the app to view messages offline.</p>
+                    <a href="https://github.com/Naom-Roads/GoChat" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
             </div>
 
 
         </div>
+
+
+<!--            Rails APP That need to be updated before being added-->
+
+<!--        <div class="card">-->
+<!--            <img class="card-img-top" src="assets/img/pokedex.png" alt="Card image cap">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">MessageMoi</h5>-->
+<!--                <p class="card-text">Simple app that allows friends and family to chat over cyber space.</p>-->
+<!--                <a href="https://github.com/Naom-Roads/message_moi" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>-->
+<!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="card">-->
+<!--            <img class="card-img-top" src="assets/img/pokedex.png" alt="Card image cap">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">Finance Tracker</h5>-->
+<!--                <p class="card-text">Financial Tracking App, primarily developed using Ruby on Rails. You can track stocks as well as add-->
+<!--                    friends and track their stocks.</p>-->
+<!--                <a href="https://github.com/Naom-Roads/finance-tracker" target="_blank" rel="noopener" class="btn btn-primary">View Project on Github</a>-->
+<!--                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>-->
+<!--            </div>-->
+<!--        </div>-->
+
 
     </section>
 
