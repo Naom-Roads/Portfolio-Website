@@ -21,6 +21,7 @@
 
 .slider {
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
     height: 80vh;
 }

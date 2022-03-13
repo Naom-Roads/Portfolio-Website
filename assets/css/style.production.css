@@ -528,11 +528,13 @@ button:focus,
     flex-direction: column;
     text-align: center;
     padding-top: 10px;
-    margin-bottom: 0;
+
 }
 
-.social-media {
-    margin-top: 10px;
+.social-media a {
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 
