@@ -100,12 +100,12 @@ button:focus,
 }
 
 
-.btn:visited {
+.btn-primary:visited {
     color: white;
 }
 
 
-.btn:active {
+.btn-primary:active {
     color: white;
 }
 
@@ -116,7 +116,7 @@ button:focus,
     border-bottom: 2px solid rgba(192, 155, 35, 0.801);
 }
 
-.btn {
+.btn-primary {
     margin: 10px;
     border: none;
     font-family: var(--font-family);
@@ -134,8 +134,8 @@ button:focus,
 }
 
 
-.btn:hover,
-.btn:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
