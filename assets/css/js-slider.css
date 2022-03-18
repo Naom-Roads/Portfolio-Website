@@ -170,7 +170,7 @@
     clip-path: circle(120vmax at 30vw 50%);
 }
 .slide:nth-child(1) .slide__inner {
-    background-image: url('../img/myFlixangular.png');
+    background-image: url('../img/myflixangular.png');
 }
 .slide:nth-child(2) .slide__inner {
     background-image: url('../img/myFlixApidocs.png');
