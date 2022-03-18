@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="19a8f991-50aa-4f7f-a1f8-d3e9339ebd11" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/mainscripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/mainscripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,13 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/js/mainscripts.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="26HdBtuGEA79oNCBKyzlxxNqlGZ" />
   <component name="ProjectViewState">
@@ -51,6 +60,7 @@
       <workItem from="1647117053842" duration="17854000" />
       <workItem from="1647605719871" duration="17000" />
       <workItem from="1647605737556" duration="24000" />
+      <workItem from="1647605806590" duration="6862000" />
     </task>
     <servers />
   </component>
@@ -67,6 +77,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

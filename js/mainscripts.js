@@ -1,3 +1,21 @@
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from "firebase/analytics";
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyAVvfuWg9b0MrHzgRSzrTWJLx43H8wthmU",
+    authDomain: "portfolio-69fb5.firebaseapp.com",
+    projectId: "portfolio-69fb5",
+    storageBucket: "portfolio-69fb5.appspot.com",
+    messagingSenderId: "128564275176",
+    appId: "1:128564275176:web:a76ef12edcd9dfa4cce65d",
+    measurementId: "G-REG8HSEPH7"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
 var contactModal = document.getElementById('contact')
 contactModal.addEventListener('show.bs.modal', function (event) {
     // Button that triggered the modal
@@ -14,6 +32,11 @@ contactModal.addEventListener('show.bs.modal', function (event) {
     contactTitle.textContent = 'New message to ' + recipient
     modalBodyInput.value = recipient
 })
+
+
+// function sendEmail(name, email, body) ({
+//
+//                     })
 
 
 
