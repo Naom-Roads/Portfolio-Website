@@ -1,4 +1,15 @@
 # Welcome to my portfolio 
 
-This is a site dedicated to all of the work I am doing. It will also have some information regarding my skills and how to contact me. 
+### 👋 Hi, I’m [Your Name]
 
+I’m a software engineer and co-founder at [TalkWiz.ai](https://talkwiz.ai), where I build AI-driven tools that automate appointment scheduling and client communication.
+
+🧠 **Past Work:**  
+Before founding TalkWiz, I worked at Syncro as a full-stack developer.  
+Most of my contributions there were in private repositories under a company GitHub account,  
+so they don’t appear in my personal contribution graph.
+
+🚀 **Current Focus:**  
+- Building and scaling TalkWiz.ai’s platform  
+- Exploring AI integrations in user scheduling and messaging  
+- Experimenting with new portfolio and developer experience trends
