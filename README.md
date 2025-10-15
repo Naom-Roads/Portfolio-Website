@@ -1,8 +1,10 @@
 # Welcome to my portfolio 
 
-### 👋 Hi, I’m [Your Name]
+### 👋 Hi, I’m Naomi
 
 I’m a software engineer and co-founder at [TalkWiz.ai](https://talkwiz.ai), where I build AI-driven tools that automate appointment scheduling and client communication.
+
+💼 Company GitHub: [@naomi-talkwiz](https://github.com/naomi-talkwiz)
 
 🧠 **Past Work:**  
 Before founding TalkWiz, I worked at Syncro as a full-stack developer.  
